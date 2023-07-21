@@ -6,6 +6,7 @@
   --slate: #434455;
   --cornflower: #e7e9fc;
   --white: #ffffff;
+  --grey: rgba(46, 47, 66, 0.7);
 }
 
 html {
@@ -34,11 +35,6 @@ img {
   height: auto;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -51,6 +47,11 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -133,6 +134,11 @@ body {
   height: 600px;
   flex-shrink: 0;
   padding: 188px 0;
+  background-image: url(../images/dark-hero-bg.png), url(../images/hero-bg.jpg),
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: 1440px, 1440px;
 }
 
 .hero-container {
@@ -186,6 +192,14 @@ body {
   display: flex;
   margin-left: -24px;
   margin-top: -24px;
+}
+
+.feature-icon-container {
+  background-color: var(--cloud, #f4f4fd);
+  border-radius: 4px;
+}
+
+.feature-icon {
 }
 
 .feature-item,
@@ -263,6 +277,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate, #434455);
   text-align: center;
+}
+
+.team-social-list {
+  display: flex;
+}
+
+.clients-list {
+  display: flex;
 }
 
 .projects-container {
